@@ -1,0 +1,254 @@
+body{
+    background-image: url(./images/bg-desktop.png);
+    background-size: 100% 50% ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif;
+    font-weight:400;
+    font-size:14px;
+    background-color: hsl(229, 57%, 11%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    color:hsl(243, 100%, 93%);
+    
+
+    
+}
+
+.container{
+    display: flex;
+    
+    
+}
+
+.box1{
+    /* display:flex; */
+    align-items: center;
+    background-color: hsl(228, 56%, 26%);
+    margin-right:50px;
+    border-radius: 10px 100px 10px 10px;
+    
+    padding:30px 120px 40px 0px;
+    
+}
+
+.logo{
+    display: block;
+    padding:20px 50px 20px 30px;
+
+}
+
+.icons{
+    padding-left: 30px ;
+
+}
+
+.doc{
+    background-color:hsl(229, 57%, 11%) ;
+    padding: 13px;
+    border-radius: 5px;
+    height:20px;
+    width: 16px;
+    margin-right: 15px;
+}
+
+.folder{
+    background-color:hsl(229, 57%, 11%) ;
+    padding: 13px;
+    /* padding-top:14px; */
+    border-radius: 5px;
+    height:16px;
+    width: 20px;
+    margin-right: 15px;
+
+}
+
+.upload{
+    background-color:hsl(229, 57%, 11%) ;
+    padding: 13px;
+    border-radius: 5px;
+
+
+}
+
+.box2{
+    align-items: center;
+    background-color: hsl(228, 56%, 26%);
+    margin-right:0px;
+    border-radius: 10px;
+    height:88px;
+    padding:30px 30px 40px 0px;
+    display: flex;
+    position:relative;
+    
+    top: 20%;
+    z-index: 1;
+}
+
+.usage{
+    position:absolute;
+    bottom: 60%;
+    margin:30px auto auto 40px;
+
+    /* width:100% */
+}
+.used{
+    font-weight: 700;
+}
+.meter{
+    border-radius: 1000px;
+    background-color:hsl(229, 57%, 11%) ;
+    height: 15px;
+    width: 500px;
+    position: relative;
+    top: 0%;
+    margin-left: 40px;
+
+}
+
+.color{
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+    height: 13px;
+    width: 400px;
+    border-radius: 1000px;
+}
+
+
+.round{
+    border-radius: 1000px;
+    height:12px;
+    width: 13px;
+    background-color: white;
+    position: absolute;
+    top:6%;
+    left:78%
+
+}
+.start{
+    position: absolute;
+    top:55%;
+    margin:5px auto auto 40px;
+
+}
+
+.end{
+    position: absolute;
+    top:55%;
+    right:5%;
+    margin:5px auto auto 40px;
+}
+
+
+.usage2{
+    position: absolute;
+    top: -30%;
+    right: 6%;
+    background-color: #fff;
+    color: hsl(229, 57%, 11%);
+    font-size: 12px;
+    padding: 17px 25px 17px 25px;
+    z-index: 1;
+    border-radius: 10px;
+    border-bottom-right-radius: 5;
+    letter-spacing: 2px;
+}
+
+.usage2:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 33px solid #fff;
+    border-bottom: 0px solid #fff;
+    left: 137.578px;
+    bottom: -24px;
+}
+
+.big{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.attribution{
+    position: absolute;
+    bottom:0;
+    text-align: center;
+}
+
+@media only screen and (max-width:625px){
+    body{
+        background-size: 300% 1000%;
+    }
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box1{
+        align-items: center;
+        background-color: hsl(228, 56%, 26%);
+        margin-right: 0;
+        position: relative;
+        justify-content: center;
+        width:250px;
+        border-radius: 10px 100px 10px 10px;
+        padding: 21px 43px 39px 40px;
+    }
+
+    .box2{
+        width: 250px;
+        padding: 21px 43px 39px 40px;
+    }
+
+    .usage{
+        margin:0;
+    }
+
+    .meter{
+        border-radius: 1000px;
+        background-color: hsl(229, 57%, 11%);
+        height: 15px;
+        width: 250px;
+        position: relative;
+        top: 0%;
+        margin-left: 0;
+    }
+
+    .color {
+        background-image: linear-gradient(to right,hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+        height: 13px;
+        width: 195px;
+        border-radius: 1000px;
+    }
+
+    .round{
+        left:75%;
+    }
+    
+    .start{
+        margin:0;
+    }
+
+    .end{
+        margin:0;
+        right:12%;
+    }
+
+    .usage2{
+        top:80%;
+        right:25%;
+    }
+    .usage2:before {
+        content: none;
+    }
+
+
+}
